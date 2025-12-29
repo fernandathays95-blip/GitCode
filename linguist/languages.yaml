@@ -1,0 +1,7 @@
+GitCode:
+  type: programming
+  extensions:
+    - .gc
+    - .gitcode
+  color: "#ff8800"
+  #mais linguagens...
