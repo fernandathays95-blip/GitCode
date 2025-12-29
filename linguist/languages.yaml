@@ -1,7 +1,62 @@
+# =====================================================
+# Arquivo: languages.yml
+# Projeto: GitCode Linguist
+# Descrição: Definição de linguagens reconhecidas
+# =====================================================
+
 GitCode:
-  type: programming
-  extensions:
+  type: programming            # programming | markup | data | prose
+  color: "#ff8800"             # cor da linguagem
+  extensions:                  # extensões reconhecidas
     - .gc
     - .gitcode
-  color: "#ff8800"
-  #mais linguagens...
+  tm_scope: source.gitcode     # escopo TextMate
+  ace_mode: text               # editor Ace
+  language_id: 10001            # ID único
+  filenames:                   # nomes fixos de arquivo
+    - GitCodefile
+  interpreters:                # se fosse script
+    - gitcode
+  group: Git                   # agrupa com outras linguagens
+  aliases:                     # nomes alternativos
+    - git-code
+    - gc-lang
+  wrap: true                   # quebra de linha
+  searchable: true             # aparece na busca
+  popular: false               # linguagem popular?
+  version: "1.0"               # versão da linguagem
+  year: 2025                   # ano de criação
+
+MPLISDE:
+  type: programming
+  color: "#0055aa"
+  extensions:
+    - .mpl
+  tm_scope: source.mplisde
+  ace_mode: text
+  language_id: 10002
+  searchable: true
+  popular: false
+
+MPLISDE++:
+  type: programming
+  color: "#003377"
+  extensions:
+    - .mplpp
+  tm_scope: source.mplisdepp
+  ace_mode: text
+  language_id: 10003
+  searchable: true
+  popular: false
+
+BRASIL:
+  type: programming
+  color: "#009c3b"
+  extensions:
+    - .brasil
+    - .BR2
+  tm_scope: source.brasil
+  ace_mode: text
+  language_id: 10004
+  searchable: true
+  popular: false
